@@ -43,7 +43,7 @@ raindrops = []
 def animate_raindrops(value):
     global rain_direction
     for i in range(len(raindrops)):
-        raindrops[i][1] -= 5  #raindrop speed, y-coordinate
+        raindrops[i][1] -= 2  #raindrop speed, y-coordinate
         raindrops[i][0] += rain_direction * 0.3  #x-coordinate(left/right) based on rain direction
         if raindrops[i][1] < 0: 
             raindrops[i][1] = 600 + random.randint(10, 100) #resetting the raindrop position => 615,620,..random
